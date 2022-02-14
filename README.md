@@ -218,4 +218,15 @@ version: 1.0
         404:
           body:
               application/json:
-
+/photos:
+  get:
+    description: recupera photos
+      queryParameters:
+        page:
+          required: false
+          type: integer
+          description: Set numero de pagina
+        responses:
+          200:
+            body: 
+              application/json:
